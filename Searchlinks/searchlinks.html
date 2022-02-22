@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Search Links</title>
+</head>
+<body>
+	<div class="search">
+		<form action="https://www.stove-parts-unlimited.com/search-results/" method="get">
+			<label for="spultd">Stove Parts Unlimited:</label>
+			<input type="search" id="spultd" name="q" class="input">
+			<button class="input">Go</button>
+		</form>
+		<form action="https://pellet-stove-parts-4less.com/pages/search-results-page">
+			<label for="sp4l"> Stove Parts 4 Less:</label>
+			<input type="search" id="sp4l" name="q" class="input">
+			<button class="input">Go</button>
+		</form>
+	</div>
+	<section>
+		<form action="https://pellethead.com/wp-admin/edit.php" method="get">
+			<label for="pellethead">Pellethead Order#:</label>
+			<input type="search" id="pellethead" name="s" class="input">
+			<input type="hidden" name="post_status" value="all">
+			<input type="hidden" name="post_type" value="shop_order">
+			<input type="hidden" name="action" value="-1">
+			<input type="hidden" name="m" value="0">
+			<button class="input" formtarget="_blank" rel="noopener noreferrer">Go</button>
+		</form>
+<!-- https://www.ebay.com/sh/ord/?search=buyername%3AClint+Caywood -->
+<!-- https://www.ebay.com/sh/ord/?search=buyername:Clint Caywood -->
+		<form action="https://www.ebay.com/sh/ord/" method="get">
+			<label for="ebay">Ebay Customer Name:</label>
+			<input type="hidden" name="search" value="buyername:">
+			<input type="search" id="ebay"name="search" class="input">
+			<button class="input" formtarget="_blank" rel="noopener noreferrer">Go</button>
+		</form>
+
+	</section>
+	<br>
+	<section>
+		<iframe width="900" height="720" src="https://embed.windy.com/embed2.html?lat=43.827&lon=-88.673&detailLat=43.827&detailLon=-88.673&width=1280&height=720&zoom=8&level=surface&overlay=radar&product=radar&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1" frameborder="0"></iframe>
+	</section>
+</body>
+</html>

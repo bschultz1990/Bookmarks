@@ -1,0 +1,14 @@
+table {
+	border-collapse: collapse;
+}
+
+td {
+	border: 1px solid black;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+body	{
+	font-family: "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+	
+}

@@ -1,0 +1,14 @@
+aside {
+	font-size: 70%;
+	color: grey;
+}
+
+h1 {
+	margin-top: 20px;
+	margin-bottom: 40px;
+	font-weight: bold;
+}
+
+table {
+	width: 900px;
+}

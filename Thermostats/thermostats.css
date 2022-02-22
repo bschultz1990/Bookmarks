@@ -1,0 +1,19 @@
+.thumbnail {
+	max-height:125px;
+}
+
+hr {
+	margin-bottom: 40px;
+}
+
+h1 {
+	font-weight: bold;
+}
+
+.note {
+	font-style: italic;	
+}
+
+.row {
+	margin-bottom: 40px;
+}
