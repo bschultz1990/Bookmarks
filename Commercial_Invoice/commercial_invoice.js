@@ -10,7 +10,7 @@ let units = [
         20.95,
     ],
     [2, "Pounds", "Misc. Item", 5, 30],
-    [1, "Pounds", "Harman Igniter - AMP-HIFIN", 0.1, 70.99],
+    [1, "Pounds", "Harman Igniter - AMP-HIFIN", 1.5, 70.99],
 ];
 
 let itemTable = document.getElementById("commodities"); // get table data
@@ -23,6 +23,10 @@ function addItems(array) {
             let newCell = newRow.insertCell(array[property + 1]);
             let newText = document.createTextNode(entries[property]);
             newCell.appendChild(newText);
+            // TODO: Center Qty., Measure, and Wt. cell <td>s.
+            if (property + 1 == 1 || property + 1 == 2 || property + 1 == 4) {
+                newCell.classList.add("td-center");
+            }
         }
     }
 }
@@ -40,5 +44,6 @@ function addWeights() {
 addItems(units);
 addWeights();
 
+// assign total weight;
 let shipTotalWeight = document.getElementById("totalweight");
-shipTotalWeight.innerText = totalWeight + " lbs."; // assign total weight;
+shipTotalWeight.innerText = totalWeight + " lbs.";
