@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="commercial_invoice.css">
+	<title>TITLE</title>
+</head>
+<body>
+	<div class="container">
+		<section>
+			<div class="boxheader center">
+				<h3 class="bold">Commercial Invoice</h3>
+			</div> <!--invoice header-->
+			<div id="orderheader">
+				<div><p class="bold">Pellethead.com</p></div>
+				<div class="orderdate"><p>Order:</p> <p>Date:</p></div>
+			</div>
+		</section>
+		<section>
+			<table class="table">
+				<tr>
+					<th class="boxheader bold tablehalf"><h3>Ship From</h3></th>
+					<th class="boxheader bold tablehalf"><h3 class="bold">Ship To</h3></th>
+				</tr>
+				<tr>
+					<td class="bold">Pellethead.com</td>
+					<td id="shiptoname"></td>
+				</tr>
+				<tr>
+					<td>W9715 State Road 96<br>PO BOX 167<br>Dale, Wisconsin 54931<br>920-955-3858<br>http://pellethead.com</td>
+					<td></td>
+				</tr>
+			</table>
+		</section>
+		<section>
+			<table class="table">
+				<tr>
+					<th class="boxheader bold tablehalf"><h3>Importer Other Than Recipient</h3></th>
+					<th class="boxheader bold tablehalf"><h3>Ship To</h3></th>
+				</tr>
+				<tr>
+					<td>Earth Sense Energy Systems<br>CL 380782<br>W9715 State Road 96<br>Dale, WI 54931<br>920-779-6647 / 800-236-6647</td>
+					<td>
+						<div id="checkboxes">
+							<div class="box"><div class="checkbox"></div class="bold">CIF</div>
+							<div class="box"><div class="checkbox"></div class="bold">FOB</div>
+							<div class="box"><div class="checkbox"></div class="bold">C&F</div>
+						</div>
+						<div>
+							<table class="table shiptotable">
+								<tr>
+									<td class="smtablehalf">Country of Export:</td>
+									<td class="smtablehalf">United States</td>
+								</tr>
+								<tr>
+									<td>Country of Destination:</td>
+									<td id="countrydest"></td>
+								</tr>
+								<tr>
+									<td>Currency:</td>
+									<td>US Dollar</td>
+								</tr>
+								<tr>
+									<td>Package Count:</td>
+									<td id="pkgcount"></td>
+								</tr>
+								<tr>
+									<td>Total Weight:</td>
+									<td id="totalweight"></td>
+								</tr>
+							</table>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</section>
+		<section>
+			<table id="commodities" class="table">
+				<tbody>
+					<tr>
+						<th id="qty" class="boxheader bold"><h3>Qty</h3>.</th>
+						<th id="unit" class="boxheader bold"><h3>Unit of Measure</h3></th>
+						<th id="desc" class="boxheader bold"><h3>Commodity Description</h3></th>
+						<th id="wt" class="boxheader bold"><h3>Wt.</h3></th>
+						<th id="value" class="boxheader bold"><h3>Unit Value</h3></th>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+	</div> <!-- container -->
+	<script src="commercial_invoice.js"></script>
+</body>
+</html>
