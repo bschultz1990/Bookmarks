@@ -89,3 +89,8 @@ td {
 .smtablehalf {
     column-width: 200px;
 }
+
+.spacebetween {
+    display: flex;
+    justify-content: space-between;
+}
