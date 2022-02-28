@@ -23,8 +23,8 @@ function addItems(array) {
             let newCell = newRow.insertCell(array[property + 1]);
             let newText = document.createTextNode(entries[property]);
             newCell.appendChild(newText);
-            // TODO: Center Qty., Measure, and Wt. cell <td>s.
-            if (property + 1 == 1 || property + 1 == 2 || property + 1 == 4) {
+            // TODO: Center Qty., Measure, and Wt. cell <td>.
+            if (property + 1 == 1) {
                 newCell.classList.add("td-center");
             }
         }
