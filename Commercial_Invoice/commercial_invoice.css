@@ -1,6 +1,6 @@
 body {
     font-family: calibri;
-    background-color: rgb(22, 22, 22);
+    background-color: rgb(190, 190, 190);
 }
 
 h5,
@@ -19,7 +19,6 @@ section {
 
 .container {
     background-color: pink;
-    margin-top: 3rem;
 }
 
 .boxheader {
@@ -60,7 +59,7 @@ td {
 }
 
 .tablehalf {
-    column-width: 500px;
+    column-width: 50%;
 }
 
 #checkboxes {
@@ -93,4 +92,14 @@ td {
 .spacebetween {
     display: flex;
     justify-content: space-between;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+}
+
+#signature,
+#date {
+    border-top: 1px solid black;
 }
