@@ -59,7 +59,7 @@ td {
 }
 
 .tablehalf {
-    column-width: 50%;
+    column-width: 500px;
 }
 
 #checkboxes {
@@ -95,11 +95,31 @@ td {
 }
 
 .line {
-    display: flex;
-    justify-content: space-between;
+    background-color: greenyellow;
+}
+
+#shipmentInformation {
+    border-bottom: none;
 }
 
 #signature,
 #date {
     border-top: 1px solid black;
+}
+
+#signhere {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+#signature {
+    min-width: 30rem;
+}
+
+#date {
+    min-width: 10rem;
+}
+#spacer {
+    min-width: 5rem;
 }
