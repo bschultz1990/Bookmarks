@@ -21,8 +21,8 @@
 		<section>
 			<table class="table">
 				<tr>
-					<th class="boxheader bold"><h3>Ship From</h3></th>
-					<th class="boxheader bold"><h3 class="bold">Ship To</h3></th>
+					<th class="boxheader bold tablehalf"><h3>Ship From</h3></th>
+					<th class="boxheader bold tablehalf"><h3 class="bold">Ship To</h3></th>
 				</tr>
 				<tr>
 					<td class="bold">Pellethead.com</td>
@@ -97,7 +97,7 @@
 		
 		<!-- shipment information -->
 		<section>
-			<div class="boxheader center">
+			<div id="shipemtInformation" class="boxheader center">
 				<h3 class="bold">Shipment Information</h3>
 			</div> <!--invoice header-->
 			<table class="table">
@@ -117,11 +117,14 @@
 		</section>
 
 		<!-- signature section -->
-		<section id="signhere">
-			<div id="signature" class="line"></div>
-			<div id="spacer" class="line">aaa</div>
-			<div id="date"class="line"></div>
-
+		<section>
+			<!--  -->
+			<div class="spacebetween"></div>
+			<div id="signhere">
+				<div id="signature" class="line">Signature of shipper/exporter (print name, title, and sign)<br>I declare all the information contained in this invoice to be true and correct.</div>
+				<div id="spacer" class="line"></div>
+				<div id="date"class="line">date</div>
+			</div>
 		</section>
 		
 	</div> <!-- container -->
