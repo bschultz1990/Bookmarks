@@ -1,6 +1,6 @@
 body {
     font-family: calibri;
-    background-color: rgb(22, 22, 22);
+    background-color: rgb(190, 190, 190);
 }
 
 h5,
@@ -19,7 +19,6 @@ section {
 
 .container {
     background-color: pink;
-    margin-top: 3rem;
 }
 
 .boxheader {
@@ -88,4 +87,39 @@ td {
 
 .smtablehalf {
     column-width: 200px;
+}
+
+.spacebetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+.line {
+    background-color: greenyellow;
+}
+
+#shipmentInformation {
+    border-bottom: none;
+}
+
+#signature,
+#date {
+    border-top: 1px solid black;
+}
+
+#signhere {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+#signature {
+    min-width: 30rem;
+}
+
+#date {
+    min-width: 10rem;
+}
+#spacer {
+    min-width: 5rem;
 }

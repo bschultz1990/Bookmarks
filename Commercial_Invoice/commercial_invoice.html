@@ -3,7 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
 	<link rel="stylesheet" type="text/css" href="commercial_invoice.css">
 	<title>TITLE</title>
 </head>
@@ -15,6 +14,7 @@
 			</div> <!--invoice header-->
 			<div id="orderheader">
 				<div><p class="bold">Pellethead.com</p></div>
+				<!-- TODO: Change this to a table. -->
 				<div class="orderdate"><p>Order:</p> <p>Date:</p></div>
 			</div>
 		</section>
@@ -88,7 +88,45 @@
 					</tr>
 				</tbody>
 			</table>
+			
 		</section>
+		<section class="orderdate spacebetween">
+			<div class="bold">Total:</div>
+			<div id="totalValue" class="bold">$$$</div>
+		</section>
+		
+		<!-- shipment information -->
+		<section>
+			<div id="shipemtInformation" class="boxheader center">
+				<h3 class="bold">Shipment Information</h3>
+			</div> <!--invoice header-->
+			<table class="table">
+				<tbody>
+					<tr>
+						<th>Shipped On:</th>
+						<th>Method:</th>
+						<th>Tracking Number:</th>
+					</tr>
+					<tr>
+						<td class="td-center">2/22/2022</td>
+						<td class="td-center">FedEx International Ground</td>
+						<td class="td-center">1123456789011</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<!-- signature section -->
+		<section>
+			<!--  -->
+			<div class="spacebetween"></div>
+			<div id="signhere">
+				<div id="signature" class="line">Signature of shipper/exporter (print name, title, and sign)<br>I declare all the information contained in this invoice to be true and correct.</div>
+				<div id="spacer" class="line"></div>
+				<div id="date"class="line">date</div>
+			</div>
+		</section>
+		
 	</div> <!-- container -->
 	<script src="commercial_invoice.js"></script>
 </body>
