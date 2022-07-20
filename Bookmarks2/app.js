@@ -10,6 +10,12 @@ const search = function search() {
 
 }
 
+// TODO: Make an accordionated list of all bookmarks.
+// Add a key press event listener to the document /
+// When that fires, pull down a custom serach box and dim the rest of the screen.
+// Utilize something like the below to pull up custom results from your search.
+
+
 // const search = function search() {
 //     const searchbox = document.getElementById("search-item").value.toUpperCase();
 //     const storeitems = document.getElementById("product-list");
@@ -31,3 +37,4 @@ const search = function search() {
 //         }
 //     }
 // }
+// https://www.youtube.com/watch?v=ZFUOC-y4i0s
