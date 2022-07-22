@@ -5,3 +5,15 @@ body {
 .bg-info {
 	background-color: lightblue;
 }
+
+#listwrapper {
+	padding-right: 0rem;
+	padding-left: 0rem;
+}
+
+@media print {
+#listwrapper {
+	margin-left: 0;
+	margin-right: 0
+}
+}
