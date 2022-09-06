@@ -1,110 +1,56 @@
-body	{
-	font-family: "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+body {
+	font-family: "Lucida Grande", Verdana, sans-serif;
 	/* background-color: #001f38; */
 	/* color: #919191; */
 }
 
-
-.topnav {
-	display: flex;
-	max-height: 32px;
-	justify-content: start;
-}
-
-.navimage {
-	max-height: 32px;
-}
-
-a {
-	text-decoration: none;
-	color: #0079E5;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-h3 {
-	color: #2b2b2b;
-	/* color: #6BB7FF; */
-	text-decoration: underline;
-	margin-block-end: 0em;
-	margin-block-start:.25em;
-}
-
-ul {
-	margin-block-start: .25em;
-}
-
-.wrapper {
-	max-height: 700px;
-	display: inline-grid;
-	grid-auto-flow:column;
-}
-
-#col1, #col2, #col3, #col4 {
-	width: 275px;
-	max-height: inherit;
-	padding:10px;
-}
-
-.colborder {
-	height: inherit;
-	width: 2px;
-	/*background:linear-gradient(#6d6d6d,#D6EFFF);*/
-	background:linear-gradient(#0065bf,#e0e0e0);
-	/*background:linear-gradient(#6d6d6d,#e0e0e0);*/
-	border-radius: 200px/50%;
-}
-
-.hoverlist:hover, .hoverlist:focus {
-	opacity:1;
-	visibility:visible;
-}
-
-#col1lborder {
-	grid-row:1;
-	grid-column:1;
-}
-
-#col1 {
-	grid-row:1;
-	grid-column:2;
-}
-
-#col2lborder {
-	grid-row: 1;
-	grid-column: 3;
-}
-
-#col2 {
-	grid-row:1;
-	grid-column:4;
-}
-
-#col3lborder {
-	grid-row: 1;
-	grid-column: 5;
-}
-
-#col3 {
-	grid-row:1;
-	grid-column:6;
-}
-
-#col3rborder {
-	grid-row: 1;
-	grid-column: 7;
-}
-
-#col4 {
-	grid-row: 1;
-	grid-column: 8;
+::marker {
+	margin: 0;
+	padding: 0;
 }
 
 aside {
 	font-size: 70%;
 	color: grey;
+}
+
+h2 {
+	margin-top: 0.5rem;
+	margin-bottom: 0rem;
+}
+
+h2:hover {
+	background: hsl(278, 100%, 87%);
+	cursor: pointer;
+}
+
+ul {
+	margin-top: 0rem;
+}
+
+li {
+	list-style: none;
+}
+
+li:hover {
+	background: hsl(210, 100%, 80%);
+}
+
+a {
+	color: black;
+	text-decoration: none;
+	font-weight: 100;
+	display: block;
+}
+
+a:visited {
+	color: black;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
 }
 
 .line-through {
@@ -118,7 +64,23 @@ aside {
 	height: 20px;
 	align-items: center;
 }
-.counter-display, .counter-minus, .counter-plus {
+.counter-display,
+.counter-minus,
+.counter-plus {
 	padding-left: 10px;
 	padding-right: 10px;
 }
+
+/* .headerContainer {
+margin-top: 1rem;
+} */
+
+	.listContainer {
+		display: none;
+		/* visibility: hidden; */
+	}
+
+	.active {
+		display: inherit;
+		/* visibility: visible; */
+	}
