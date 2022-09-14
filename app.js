@@ -5,8 +5,6 @@ for (const index of temp0) {
 }
 // console.dir(linkTitles);
 
-let headerContainer = document.querySelectorAll(".headerContainer");
-
 for (let i of headerContainer) {
     i.addEventListener("click", function () {
         i.nextElementSibling.classList.toggle("active");
