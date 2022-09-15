@@ -3,16 +3,12 @@ let linkTitles = [];
 for (const index of temp0) {
     linkTitles.push(index.innerText);
 }
-// console.dir(linkTitles);
-
-for (let i of headerContainer) {
-    i.addEventListener("click", function () {
-        i.nextElementSibling.classList.toggle("active");
-    });
-}
+console.dir(linkTitles);
 
 const search = function search() {
-    const searchTerm = document.getElementById("#search-item").value.toUpperCase();
+    let searchbox = document.getElementById("search-item").value.toUpperCase();
+    let results = document.querySelector(".results")
+    console.dir(results);
 };
 
 // TODO: Make an accordionated list of all bookmarks.
