@@ -1,14 +1,16 @@
 let temp0 = document.querySelectorAll("a");
 let linkTitles = [];
 for (const index of temp0) {
-    linkTitles.push(index.innerText);
+	linkTitles.push(index.innerText);
 }
 console.dir(linkTitles);
 
 const search = function search() {
-    let searchbox = document.getElementById("search-item").value.toUpperCase();
-    let results = document.querySelector(".results")
-    console.dir(results);
+	let searchbox = document.getElementById("search-item").value.toUpperCase();
+	let storeitems = document.querySelector('#product-list')
+	let name = document.querySelectorAll('a');
+
+	console.dir(results);
 };
 
 // TODO: Make an accordionated list of all bookmarks.
@@ -38,3 +40,5 @@ const search = function search() {
 //     }
 // }
 // https://www.youtube.com/watch?v=ZFUOC-y4i0s
+
+
