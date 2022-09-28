@@ -7,9 +7,13 @@ console.dir(linkTitles);
 
 const search = function search() {
 	let searchbox = document.getElementById("search-item").value.toUpperCase();
-	let storeitems = document.querySelector('#product-list')
+	let storeitems = document.querySelector('#product-list');
+	let product = document.querySelectorAll('.box-title');
 	let name = document.querySelectorAll('a');
 
+	for (const index of name){
+		// let match = product[index].
+	}
 	console.dir(results);
 };
 
