@@ -1,3 +1,7 @@
+.nodisplay {
+	display: none;
+}
+
 :root {
 	--primaryblue: hsl(187, 100%, 42%);
 }

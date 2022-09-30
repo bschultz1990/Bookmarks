@@ -1,21 +1,31 @@
-let temp0 = document.querySelectorAll("a");
+let linkList = document.querySelectorAll("a");
 let linkTitles = [];
-for (const index of temp0) {
+for (const index of linkList) {
 	linkTitles.push(index.innerText);
 }
-console.dir(linkTitles);
+// console.dir(linkTitles);
+
+// let hrefs = 
 
 const search = function search() {
 	let searchbox = document.getElementById("search-item").value.toUpperCase();
-	let storeitems = document.querySelector('#product-list');
-	let product = document.querySelectorAll('.box-title');
+	let storeitems = document.querySelector('.product-list');
+	let product = document.querySelectorAll('a');
 	let name = document.querySelectorAll('a');
+	// let searchresults = 
 
-	for (const index of name){
-		// let match = product[index].
+	if (searchbox == ""){
+		console.log("no stuff in box")
+		storeitems.classList.remove("nodisplay")
+	} else {
+		console.log("stuff in search box")
+		storeitems.classList.add("nodisplay")
+
 	}
-	console.dir(results);
-};
+
+	// for (const index of name){
+
+}
 
 // TODO: Make an accordionated list of all bookmarks.
 // Add a key press event listener to the document /
