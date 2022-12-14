@@ -12,6 +12,24 @@ td {
     padding-left: 8px;
 }
 
+input {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    height: 2.25rem;
+}
+
+input::placeholder {
+    color:  black;
+}
+
+input:hover{
+    /* background-color: #ddd; */
+    background-color: rgba(255, 255, 0, 0.562);
+    cursor: pointer;
+}
+
 .topbanner {
     width: 100%;
     background-color: rgba(255, 255, 0, 0.562);
@@ -28,6 +46,15 @@ td {
     display: inline-table;
     margin-left: 15px;
     margin-right: 15px;
+}
+
+.currency {
+    text-align: right;
+}
+
+.ton {
+    /* background-color: #FFC794; */
+    background-color: rgba(255, 255, 0, 0.562);
 }
 
 aside {

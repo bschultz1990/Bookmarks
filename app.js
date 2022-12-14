@@ -1,19 +1,31 @@
-let temp0 = document.querySelectorAll("a");
+let linkList = document.querySelectorAll("a");
 let linkTitles = [];
-for (const index of temp0) {
-    linkTitles.push(index.innerText);
+for (const index of linkList) {
+	linkTitles.push(index.innerText);
 }
 // console.dir(linkTitles);
 
-for (let i of headerContainer) {
-    i.addEventListener("click", function () {
-        i.nextElementSibling.classList.toggle("active");
-    });
-}
+// let hrefs = 
 
 const search = function search() {
-    const searchTerm = document.getElementById("#search-item").value.toUpperCase();
-};
+	let searchbox = document.getElementById("search-item").value.toUpperCase();
+	let storeitems = document.querySelector('.product-list');
+	let product = document.querySelectorAll('a');
+	let name = document.querySelectorAll('a');
+	// let searchresults = 
+
+	if (searchbox == ""){
+		console.log("no stuff in box")
+		storeitems.classList.remove("nodisplay")
+	} else {
+		console.log("stuff in search box")
+		storeitems.classList.add("nodisplay")
+
+	}
+
+	// for (const index of name){
+
+}
 
 // TODO: Make an accordionated list of all bookmarks.
 // Add a key press event listener to the document /
@@ -42,3 +54,5 @@ const search = function search() {
 //     }
 // }
 // https://www.youtube.com/watch?v=ZFUOC-y4i0s
+
+
