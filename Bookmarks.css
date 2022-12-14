@@ -121,6 +121,13 @@ input:checked + section.box .box-title:before {
 	color: white;
 }
 
+#sPanel {
+	padding-right: 3rem;
+	padding-left: 1rem;
+	padding-top: 1rem;
+	background-color: lightblue;
+}
+
 body {
 	font-family: "Lucida Grande", Verdana, sans-serif;
 	/* background-color: #001f38; */

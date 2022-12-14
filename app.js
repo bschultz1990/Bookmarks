@@ -1,30 +1,46 @@
-let linkList = document.querySelectorAll("a");
-let linkTitles = [];
-for (const index of linkList) {
-	linkTitles.push(index.innerText);
+let list = {
+	title: [],
+	link: []
 }
-// console.dir(linkTitles);
 
-// let hrefs = 
+for (const index of document.querySelectorAll("a")) {
+	list.title.push(index.innerText);
+	list.link.push(index.href)
+}
 
-const search = function search() {
+const sPanel = document.createElement("div");
+sPanel.classList.add("nodisplay")
+sPanel.id = "sPanel"
+document.querySelector('.box').appendChild(sPanel)
+
+const sList = document.createElement("ul")
+// sList.id = "sList"
+sPanel.appendChild(sList)
+
+
+for (let item of list.title) {
+	const li = document.createElement("li");
+	li.textContent = item;
+	sList.appendChild(li);
+	
+}
+
+function search() {
 	let searchbox = document.getElementById("search-item").value.toUpperCase();
 	let storeitems = document.querySelector('.product-list');
-	let product = document.querySelectorAll('a');
-	let name = document.querySelectorAll('a');
-	// let searchresults = 
 
-	if (searchbox == ""){
-		console.log("no stuff in box")
-		storeitems.classList.remove("nodisplay")
+	if (searchbox == "") {
+		console.log("no stuff in box");
+		storeitems.classList.remove("nodisplay");
+		sPanel.classList.add("nodisplay")
+
 	} else {
-		console.log("stuff in search box")
-		storeitems.classList.add("nodisplay")
-
+		console.log("stuff in search box");
+		storeitems.classList.add("nodisplay");
+		sPanel.classList.remove("nodisplay");
 	}
 
 	// for (const index of name){
-
 }
 
 // TODO: Make an accordionated list of all bookmarks.
