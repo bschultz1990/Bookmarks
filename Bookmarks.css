@@ -124,8 +124,9 @@ input:checked + section.box .box-title:before {
 #sPanel {
 	padding-right: 3rem;
 	padding-left: 1rem;
-	padding-top: 1rem;
-	background-color: lightblue;
+	padding-top: 2rem;
+	background-color: white;
+	box-shadow: 0 -1px 0 #e5e5e5,0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
 }
 
 body {

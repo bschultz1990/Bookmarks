@@ -14,15 +14,19 @@ sPanel.id = "sPanel"
 document.querySelector('.box').appendChild(sPanel)
 
 const sList = document.createElement("ul")
-// sList.id = "sList"
+sList.id = "sList"
 sPanel.appendChild(sList)
 
-
-for (let item of list.title) {
+for (let i=0; i <= array.length(list.title)-1; i++){
 	const li = document.createElement("li");
-	li.textContent = item;
+	const a = document.createElement("a");
+	const aNode = document.createTextNode(list.title[i])
+	// Append text node to anchor element:
+	a.appendChild(aNode)
+	a.title = list.title[i];
+	a.href = list.link[i];
 	sList.appendChild(li);
-	
+	li.appendChild(a);
 }
 
 function search() {
