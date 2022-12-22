@@ -51,7 +51,6 @@ function search() {
 	// Iterate through the list.title array:
 	for (let i = 0; i < list.title.length; i++) {
 		let title = list.title[i].toUpperCase();
-		console.log(`Title: ${title}`)
 		let li = sList.children[i];
 
 		if (title.includes(searchbox)) {
@@ -62,3 +61,15 @@ function search() {
 		}
 	}
 }
+
+
+const searchbar = document.getElementById("search-item")
+document.addEventListener("keydown", (event) => {
+	if (event.key === "/") {
+		searchbar.focus();
+		event.preventDefault();
+	}
+	if (event.key === "Escape"){
+		searchbar.value = ""
+	}
+});
