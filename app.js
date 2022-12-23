@@ -70,6 +70,7 @@ document.addEventListener("keydown", (event) => {
 		event.preventDefault();
 	}
 	if (event.key === "Escape"){
+		searchbar.focus();
 		searchbar.value = ""
 	}
 });
