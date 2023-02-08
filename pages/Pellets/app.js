@@ -1,14 +1,11 @@
-const input = document.getElementById('input')
-const btncopy = document.getElementById('btnCopy')
+let sku = document.querySelectorAll(".sku");
 
-input.onclick = function() {
-    // Select text
-    myInp.select();
-
+sku.forEach(function (item) {
+  item.onclick = function () {
     // Copy text
-    document.execCommand('Copy');
+    navigator.clipboard.writeText(item.placeholder);
 
     // Display an alert
-    alert("Text copied!")
-
-}
+    console.log(`${item.placeholder} copied.`);
+  };
+});
