@@ -1,6 +1,6 @@
-.nodisplay {
-	display: none;
-}
+/* .nodisplay { */
+/* 	display: none; */
+/* } */
 
 :root {
 	--primaryblue: hsl(187, 100%, 42%);
@@ -121,6 +121,15 @@ input:checked + section.box .box-title:before {
 	color: white;
 }
 
+#sPanel {
+	padding-right: 3rem;
+	padding-left: 1rem;
+	padding-top: 2rem;
+	padding-bottom: 1rem;
+	background-color: white;
+	box-shadow: 0 -1px 0 #e5e5e5,0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
+}
+
 body {
 	font-family: "Lucida Grande", Verdana, sans-serif;
 	/* background-color: #001f38; */
@@ -200,3 +209,4 @@ a:visited {
 	display: inherit;
 	/* visibility: visible; */
 }
+
