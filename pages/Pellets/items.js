@@ -97,8 +97,8 @@ let item = {
 // Assign pf_bag and bc_bag pricing:
 for (let element in item) {
   if (element != "ujbulk") {
-    item[element].pf_bag = Math.round(item[element].rt_bag - 0.3);
-    item[element].bc_bag = Math.round(item[element].pf_bag - 0.3);
+    item[element].pf_bag = item[element].rt_bag - 0.3;
+    item[element].bc_bag = item[element].pf_bag - 0.3;
   }
 }
 
@@ -121,4 +121,4 @@ item.we.rt_ton = Math.round(item.we.rt_bag * 60);
 item.ujbulk.pf_ton = item.ujbulk.rt_ton - 15;
 item.ujbulk.bc_ton = item.ujbulk.pf_ton - 15;
 
-console.log(item);
+console.dir(item);
